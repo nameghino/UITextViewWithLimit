@@ -12,6 +12,8 @@
 		35725BCB1EDCD4F200E40A96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35725BC91EDCD4F200E40A96 /* Main.storyboard */; };
 		35725BCD1EDCD4F200E40A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35725BCC1EDCD4F200E40A96 /* Assets.xcassets */; };
 		35725BD01EDCD4F200E40A96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35725BCE1EDCD4F200E40A96 /* LaunchScreen.storyboard */; };
+		35725BDC1EDDF15D00E40A96 /* UITextViewWithLimit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35725BDB1EDDF15D00E40A96 /* UITextViewWithLimit.swift */; };
+		35725BDE1EDDF1A800E40A96 /* UITextViewWithLimitDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35725BDD1EDDF1A800E40A96 /* UITextViewWithLimitDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		35725BCC1EDCD4F200E40A96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35725BCF1EDCD4F200E40A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35725BD11EDCD4F200E40A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35725BDB1EDDF15D00E40A96 /* UITextViewWithLimit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewWithLimit.swift; sourceTree = "<group>"; };
+		35725BDD1EDDF1A800E40A96 /* UITextViewWithLimitDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewWithLimitDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		35725BC41EDCD4F200E40A96 /* LimitedTextInput */ = {
 			isa = PBXGroup;
 			children = (
+				35725BDA1EDDF14700E40A96 /* Component */,
 				35725BC51EDCD4F200E40A96 /* AppDelegate.swift */,
 				35725BC71EDCD4F200E40A96 /* ViewController.swift */,
 				35725BC91EDCD4F200E40A96 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				35725BD11EDCD4F200E40A96 /* Info.plist */,
 			);
 			path = LimitedTextInput;
+			sourceTree = "<group>";
+		};
+		35725BDA1EDDF14700E40A96 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				35725BDB1EDDF15D00E40A96 /* UITextViewWithLimit.swift */,
+				35725BDD1EDDF1A800E40A96 /* UITextViewWithLimitDelegate.swift */,
+			);
+			name = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35725BDE1EDDF1A800E40A96 /* UITextViewWithLimitDelegate.swift in Sources */,
+				35725BDC1EDDF15D00E40A96 /* UITextViewWithLimit.swift in Sources */,
 				35725BC81EDCD4F200E40A96 /* ViewController.swift in Sources */,
 				35725BC61EDCD4F200E40A96 /* AppDelegate.swift in Sources */,
 			);
@@ -304,6 +320,7 @@
 				35725BD61EDCD4F200E40A96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
